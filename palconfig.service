@@ -1,0 +1,9 @@
+[Unit]
+Description=Config to automatically load palworld config files.
+
+[Service]
+Type=oneshot
+ExecStart=/home/palworld/loadconfig.sh
+
+[Install]
+WantedBy=multi-user.target

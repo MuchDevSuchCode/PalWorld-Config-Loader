@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatically check for config file updates and load them.
+
+[Timer]
+Unit=palconfig.service
+OnCalendar=*:0/2
+
+[Install]
+WantedBy=timers.target
